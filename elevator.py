@@ -17,3 +17,6 @@ class Elevator:
             time_to_floor = self.open + self.start + (math.abs((self.pos - floor)) / self.speed) + self.stop + self.open
 
         self.pos = floor
+
+    def step(self, time):
+        pass
