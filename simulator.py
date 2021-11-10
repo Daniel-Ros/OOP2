@@ -4,5 +4,10 @@ class Simulator:
         self.calls = calls
         self.time = 0
 
+    '''
+    while ()
+    
+    '''
+
     def run(self):
         self.calls

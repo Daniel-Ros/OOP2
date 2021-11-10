@@ -5,7 +5,6 @@ class State(Enum):
     INIT = 0
     GOING2SRC = 1
     GOING2DEST = 2
-    GOING2DEST = 2
     DONE = 3
 
 

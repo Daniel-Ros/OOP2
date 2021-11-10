@@ -1,7 +1,7 @@
 import json
-import random
 import sys
 
+from algorithm import Algo
 from building import Building
 from call import Call
 from elevator import Elevator
@@ -39,9 +39,8 @@ def write_calls(file, calls):
 def main(name):
     calls = build_calls_obj(sys.argv[2])
     building = build_building(sys.argv[1])
-    for c in calls:
-        c.alloc(random.randint(0, building.num_elev()))
-
+    algo = Algo(building, calls)
+    algo.run()
     write_calls(sys.argv[3], calls)
 
 
