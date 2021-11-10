@@ -1,4 +1,3 @@
-import random
 from functools import cmp_to_key
 
 
@@ -8,6 +7,7 @@ class Algo:
         self.calls = c
 
     def run(self):
-        sorted(self.building.elev, key=cmp_to_key(lambda item1, item2: item1.speed - item2.speed))
+        sorted(self.building.elev, key=cmp_to_key(lambda item1, item2: item1.speed - item2.speed))  # sort the elevators
         for c in self.calls:
-            c.alloc(random.randint(0, self.building.num_elev()))
+            for e in self.building.elev:
+                time_wasted = e.sim(c) - e.sim(None)
