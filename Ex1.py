@@ -41,7 +41,7 @@ def main(name):
     building = build_building(sys.argv[1])
     for c in calls:
         c.alloc(random.randint(0, building.num_elev()))
-    write_calls("out.csv", calls)
+    write_calls(sys.argv[3], calls)
 
 
 if __name__ == '__main__':
