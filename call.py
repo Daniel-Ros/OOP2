@@ -1,3 +1,4 @@
+import math
 from enum import Enum
 
 
@@ -12,7 +13,7 @@ class Call:
     def __init__(self, src, dest, time):
         self.src = int(src)
         self.dest = int(dest)
-        self.time = time
+        self.time = math.ceil(float(time))
         self.elev = -1
         self.state = State.INIT
 
@@ -33,7 +34,7 @@ class Call:
         self.state = State.DONE
 
     def __repr__(self):
-        return "Elevator call,{},{},{},0,{}\n".format(self.time, self.src, self.dest, self.elev)
+        return "Elevator call,{},{},{},0,{}\n".format(self.time, self.src, self.dest, self.elev.id)
 
     def __str__(self):
-        return "Elevator call,{},{},{},0,{}\n".format(self.time, self.src, self.dest, self.elev)
+        return "Elevator call,{},{},{},0,{}\n".format(self.time, self.src, self.dest, self.elev.id)
