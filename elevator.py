@@ -38,18 +38,18 @@ class Elevator:
                 active_calls.append(tmp_calls[last_active_call])
                 last_active_call += 1
 
-            ## לשנות
+            # changed a little was comparing dest which is 0 (line 34)
             for j in active_calls:
                 if self.state == 1:
-                    if j.state == State.GOING2SRC and self.pos <= j.src < dest:
+                    if j.state == State.GOING2SRC and self.pos <= j.src < j.dest:
                         dest = j.src
-                    elif j.state == State.GOING2DEST and self.pos <= j.dest < dest:
-                        dest = j.dest
+                    elif j.state == State.GOING2DEST and self.pos <= j.src < j.dest:
+                        dest = j.src
                 elif self.state == -1:
-                    if j.state == State.GOING2SRC and dest <= j.src < self.pos:
+                    if j.state == State.GOING2SRC and j.dest <= j.src < self.pos:
                         dest = j.src
-                    elif j.state == State.GOING2DEST and dest <= j.dest < self.pos:
-                        dest = j.dest
+                    elif j.state == State.GOING2DEST and j.dest <= j.src < self.pos:
+                        dest = j.src
 
             if self.pos == dest:
                 for j in active_calls:
