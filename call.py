@@ -8,6 +8,9 @@ class State(Enum):
     GOING2DEST = 2
     DONE = 3
 
+class Direction(Enum):
+    UP = 1
+    DOWN = 0
 
 class Call:
     def __init__(self, src, dest, time):
@@ -16,6 +19,7 @@ class Call:
         self.time = math.ceil(float(time))
         self.elev = -1
         self.state = State.INIT
+        self.dir = self.direction_to()
 
     def alloc(self, elev):
         self.elev = elev
@@ -32,6 +36,13 @@ class Call:
 
     def drop_off(self):
         self.state = State.DONE
+
+    def direction_to(self):
+        if self.src >= self.dest:
+            return Direction.DOWN
+        else:
+            return Direction.UP
+
 
     def __repr__(self):
         return "Elevator call,{},{},{},0,{}\n".format(self.time, self.src, self.dest, self.elev.id)
