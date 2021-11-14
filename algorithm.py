@@ -21,13 +21,20 @@ class Algo:
 
     def join_calls(self):
         i = 0
-        while i < len(self.calls) - 2:
-            j = i + 1
-            if abs(self.calls[i].src - self.calls[j].src) < (self.building.max_floor - self.building.min_floor) * 0.1:
-                if self.calls[i].src > self.calls[i].dest and self.calls[j].src > self.calls[j].dest or self.calls[
-                    i].src < self.calls[i].dest and self.calls[j].src < self.calls[j].dest:
-                    multi_call = MultiCall([self.calls[i], self.calls[j]])
-                    self.calls[i] = multi_call
-                    self.calls.remove(self.calls[j])
-                    i += 1
-            i += 1
+        j = 0
+        while i < len(self.calls)-2:
+
+
+
+        # i = 0
+        # while i < len(self.calls) - 2:
+        #     j = i + 1
+        #     if abs(self.calls[i].src - self.calls[j].src) < (self.building.max_floor - self.building.min_floor) * 0.1:
+        #         if self.calls[i].src > self.calls[i].dest and self.calls[j].src > self.calls[j].dest or self.calls[
+        #             i].src < self.calls[i].dest and self.calls[j].src < self.calls[j].dest:
+        #             if abs(self.calls[i].time - self.calls[j].time) < 10:
+        #                 multi_call = MultiCall([self.calls[i], self.calls[j]])
+        #                 self.calls[i] = multi_call
+        #                 self.calls.remove(self.calls[j])
+        #                 i += 1
+        #     i += 1

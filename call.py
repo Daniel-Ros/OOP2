@@ -66,7 +66,7 @@ class MultiCall:
             c.state = State.DONE
 
     def __repr__(self):
-        return "Elevator call,{},{},{},0,{}\n".format(self.time, self.src, self.dest, self.elev.id)
+        return "".join(map(str, self.calls))
 
     def __str__(self):
         return "".join(map(str, self.calls))
