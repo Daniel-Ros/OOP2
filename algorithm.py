@@ -5,3 +5,7 @@ class Algo:
 
     def run(self):
         print(self.calls.dt.head())
+
+
+
+    def bid(self,e,c):
