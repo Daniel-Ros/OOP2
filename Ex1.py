@@ -42,7 +42,7 @@ def write_calls(file, calls):
     f.close()
 
 
-def main(name):
+def main():
     calls, tmin, tmax = build_calls_obj(sys.argv[2])
     building = build_building(sys.argv[1])
     building.set_active_minmax(tmin, tmax)
@@ -52,4 +52,4 @@ def main(name):
 
 
 if __name__ == '__main__':
-    main('PyCharm')
+    main()

@@ -29,7 +29,7 @@ Make sure you have java (tested on 1.8.0_292) and python 3 install and configure
 
 > you will have to change the B1.json C2.csv to a building/calls of you choice
 
-or use the python script that runs all the results:
+or use the python script that runs all the combination of building/calls that are in the correct folders:
 
     git clone https://github.com/Daniel-Ros/OOP2.git
     python3 run_all.py
