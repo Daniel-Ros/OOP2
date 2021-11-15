@@ -34,23 +34,34 @@ or use the python script that runs all the results:
     git clone https://github.com/Daniel-Ros/OOP2.git
     python3 run_all.py
 
+then a file name `detailed_report.csv`will appear with all the building/calls combination runs
 ## Results
 
 These are the final results that I was able to get
 > There were some stages that I got a bit more, but really hurted other stages, soI had to balance it
 
-|Case | Uncompleted calls | average waiting time per call|
-|---|-------------------|------------------------------|
-|0|0|23.19897426188186|
-|1|4|34.79897426188186|
-|2|5|51.09792822120195|
-|3|2|42.5963457108327|
-|4|2|42.07291073728415|
-|5|17|72.77212115705177|
-|6|15|55.12788209694845|
-|7|47|224.5331211570514|
-|8|23|131.51088209694842|
-|9|5|46.30134007431241|
+|building| calls file| avg_time| uncompleted_calls| certificate|
+|---|-----|----|----|----|
+|Ex1_Buildings/B4.json|Ex1_Calls/Calls_d.csv|181.59887473199998|2|-1029780052|
+|Ex1_Buildings/B4.json|Ex1_Calls/Calls_a.csv|21.39|0|-477245372|
+|Ex1_Buildings/B4.json|Ex1_Calls/Calls_b.csv|182.77930438399991|8|-1029079617|
+|Ex1_Buildings/B4.json|Ex1_Calls/Calls_c.csv|188.049190305|1|-1049811266|
+|Ex1_Buildings/B3.json|Ex1_Calls/Calls_d.csv|538.7704245020027|97|-1988858225|
+|Ex1_Buildings/B3.json|Ex1_Calls/Calls_a.csv|31.52|0|-507592314|
+|Ex1_Buildings/B3.json|Ex1_Calls/Calls_b.csv|566.305679903997|123|-1821234212|
+|Ex1_Buildings/B3.json|Ex1_Calls/Calls_c.csv|549.042974835004|147|-1768929484|
+|Ex1_Buildings/B5.json|Ex1_Calls/Calls_d.csv|36.024|0|-524830233|
+|Ex1_Buildings/B5.json|Ex1_Calls/Calls_a.csv|17.18|0|-459240568|
+|Ex1_Buildings/B5.json|Ex1_Calls/Calls_b.csv|34.967|0|-517942067|
+|Ex1_Buildings/B5.json|Ex1_Calls/Calls_c.csv|35.137|0|-521468334|
+|Ex1_Buildings/B1.json|Ex1_Calls/Calls_d.csv|1841.6984976999543|950|-4422944342|
+|Ex1_Buildings/B1.json|Ex1_Calls/Calls_a.csv|112.92|0|-254611173|
+|Ex1_Buildings/B1.json|Ex1_Calls/Calls_b.csv|1784.2436402240376|963|-4812623036|
+|Ex1_Buildings/B1.json|Ex1_Calls/Calls_c.csv|1839.3603121899735|958|-4474949366|
+|Ex1_Buildings/B2.json|Ex1_Calls/Calls_d.csv|1840.5214976999544|950|-4427977959|
+|Ex1_Buildings/B2.json|Ex1_Calls/Calls_a.csv|53.8|0|-315129308|
+|Ex1_Buildings/B2.json|Ex1_Calls/Calls_b.csv|1783.2816402240373|963|-4813976071|
+|Ex1_Buildings/B2.json|Ex1_Calls/Calls_c.csv|1838.0983121899735|958|-4470029667|
 
 ## Assigment Instructions
 
