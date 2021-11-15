@@ -1,6 +1,5 @@
 from functools import cmp_to_key
 
-from call import MultiCall
 from simulator import Simulator
 
 
@@ -21,23 +20,34 @@ class Algo:
                 continue
             min_time = 2147483647
             min_elev = None
+            bids = []
             for e in self.building.elev:
                 time_wasted = sim.bid(e, c)
+                bids.append(time_wasted)
                 if time_wasted <= min_time:
                     min_time = time_wasted
                     min_elev = e
+            print("c:{}\b : bids : {}".format(c, bids))
             c.alloc(min_elev)
 
     def join_calls(self, calls):
         sim = Simulator()
         i = 0
-        while i < len(calls) - 1:
-            if calls[i].dir == calls[i + 1].dir:
-                if calls[i + 1].time - calls[i].time >= sim.time_to_finish(self.building.elev[0], calls[i].src,
-                                                                           calls[i + 1].src):
-                    multi_call = MultiCall([calls[i], calls[i + 1]])
-                    calls[i] = multi_call
-                    calls.remove(calls[i + 1])
-                    i += 1
-            i += 1
+        # while i < len(calls) - 1:
+        #     if calls[i].dir == calls[i + 1].dir:
+        #         if calls[i + 1].time - calls[i].time >= sim.time_to_finish(self.building.elev[-1], calls[i].src,
+        #                                                                    calls[i + 1].src):
+        #             if calls[i].dir == Direction.UP:
+        #                 if calls[i].src < calls[i + 1].src:
+        #                     multi_call = MultiCall([calls[i], calls[i + 1]])
+        #                     calls[i] = multi_call
+        #                     calls.remove(calls[i + 1])
+        #                     i += 1
+        #             if calls[i].dir == Direction.DOWN:
+        #                 if calls[i].src > calls[i + 1].src:
+        #                     multi_call = MultiCall([calls[i], calls[i + 1]])
+        #                     calls[i] = multi_call
+        #                     calls.remove(calls[i + 1])
+        #                     i += 1
+        #     i += 1
         return calls

@@ -10,12 +10,12 @@ class Elevator:
         self.start = start
         self.stop = stop
         self.calls = []
+        self.time = 0
         Elevator.fastest = max(Elevator.fastest, speed)
         if speed == Elevator.fastest:
             Elevator.fastest_elev = self
 
     def add_call(self, c):
-        self.dir = c.dir
         self.calls.append(c)
 
     def remove_call(self, c):
