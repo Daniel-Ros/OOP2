@@ -23,12 +23,16 @@ def build_building(file_name):
 def build_calls_obj(file):
     calls = []
     f = open(file, "r")
+    tmin = 0
+    tmax = 0
     for i in f.readlines():
         c = i.split(',')
         call = Call(c[2], c[3], c[1])
-        calls.append(call)
+        tmin = min([tmin, int(c[2]), int(c[3])])
+        tmax = max([tmin, int(c[2]), int(c[3])])
+        calls.append(call), tmin, tmax
     f.close()
-    return calls
+    return calls, tmin, tmax
 
 
 def write_calls(file, calls):
@@ -39,8 +43,9 @@ def write_calls(file, calls):
 
 
 def main(name):
-    calls = build_calls_obj(sys.argv[2])
+    calls, tmin, tmax = build_calls_obj(sys.argv[2])
     building = build_building(sys.argv[1])
+    building.set_active_minmax(tmin, tmax)
     algo = Algo(building, calls)
     algo.run()
     write_calls(sys.argv[3], calls)

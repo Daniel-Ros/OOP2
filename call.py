@@ -16,10 +16,10 @@ class Call:
     def __init__(self, src, dest, time):
         self.src = int(src)
         self.dest = int(dest)
-        self.time = math.ceil(float(time))
+        self.time = float(time)
         self.elev = -1
         self.state = State.INIT
-        self.dir = self.direction_to()
+        self.dir = Direction.DOWN if self.src >= self.dest else Direction.UP
 
     def alloc(self, elev):
         self.elev = elev
@@ -37,18 +37,13 @@ class Call:
     def drop_off(self):
         self.state = State.DONE
 
-    def direction_to(self):
-        if self.src >= self.dest:
-            return Direction.DOWN
-        else:
-            return Direction.UP
-
-
     def __repr__(self):
         return "Elevator call,{},{},{},0,{}\n".format(self.time, self.src, self.dest, self.elev.id)
 
     def __str__(self):
-        return "Elevator call,{},{},{},0,{}\n".format(self.time, self.src, self.dest, self.elev.id)
+        if self.elev == -1:
+            return "Elevator call,{},{},{},0,-1,{}\n".format(self.time, self.src, self.dest, self.dir)
+        return "Elevator call,{},{},{},0,{},{}\n".format(self.time, self.src, self.dest, self.elev.id, self.dir)
 
 
 class MultiCall:
@@ -56,6 +51,7 @@ class MultiCall:
         self.calls = calls
         self.src = calls[0].src
         self.dest = calls[0].dest
+        self.dir = calls[0].dir
         self.time = math.ceil(float(calls[0].time))
         self.elev = -1
         self.state = State.GOING2SRC
