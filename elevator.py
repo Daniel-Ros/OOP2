@@ -20,6 +20,3 @@ class Elevator:
 
     def remove_call(self, c):
         self.calls.remove(c)
-
-
-

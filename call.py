@@ -7,9 +7,11 @@ class State(Enum):
     GOING2DEST = 2
     DONE = 3
 
+
 class Direction(Enum):
     UP = 1
     DOWN = 0
+
 
 class Call:
     def __init__(self, src, dest, time):
@@ -43,4 +45,3 @@ class Call:
         if self.elev == -1:
             return "Elevator call,{},{},{},0,-1,{}\n".format(self.time, self.src, self.dest, self.dir)
         return "Elevator call,{},{},{},0,{},{}\n".format(self.time, self.src, self.dest, self.elev.id, self.dir)
-

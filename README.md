@@ -7,6 +7,22 @@ and some scenarios to try. Our algorithm used the same techniques as our
 [online algorithm](https://github.com/Daniel-Ros/ex0/) from Ex0. It was a greedy algorithm that estimated the cost of
 every call on every elevator, and the call would be given to the elevator that will loss less time.
 
+Here are some useful resources that I used and helped me with the algorithm:
+
+https://elevation.fandom.com/wiki/Destination_dispatch
+
+https://github.com/do-ryan/destination-dispatch-elevator-simulation
+
+https://www.youtube.com/watch?v=xOayymoIl8U
+
+https://github.com/Daniel-Ros/OOP1
+
+## Algorithm
+
+We implemented the same greedy algorithm that we used in Ex0 but with some changes to how the position is tracked. The
+goal in this algorithm is to try and calculate the amount of time ot will take each elevator to finish it's current and
+the new call given, the elevator with the lowest time is the elevator we will assing the call to.
+
 ## Folder Structure
 
 The workspace contains two folders by default, where:
@@ -36,10 +52,14 @@ this project was test using the UniTest library. the tests can be run by an IDE 
 Make sure you have java (tested on 1.8.0_292) and python 3 install and configured on you machine. clone the project:
 
     git clone https://github.com/Daniel-Ros/OOP2.git
-    python3 Ex1.py B1.json C2.csv out.csv
-    java -jar Ex1_checker_V1.2_obf.jar 1111,2222,3333 B1.json out.csv out.log
 
-> you will have to change the B1.json C2.csv to a building/calls of you choice
+run the python script:
+
+    python3 Ex1.py <Building json> <Calls csv> <output name>
+
+run the simulator
+
+    java -jar Ex1_checker_V1.2_obf.jar 1111,2222,3333 <Building json> <output name> <output log file>
 
 or use the python script that runs all the combination of building/calls that are in the correct folders:
 
@@ -75,6 +95,8 @@ These are the final results that I was able to get
 |Ex1_Buildings/B5.json|Ex1_Calls/Calls_b.csv|36.859|0|-524830233|
 |Ex1_Buildings/B5.json|Ex1_Calls/Calls_c.csv|35.038|0|-521468334|
 |Ex1_Buildings/B5.json|Ex1_Calls/Calls_d.csv|35.352|0|-521468334|
+
+> all results were uploaded to the Google form
 
 ## Assigment Instructions
 

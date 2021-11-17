@@ -25,4 +25,3 @@ class Algo:
                     min_time = time_wasted
                     min_elev = e
             c.alloc(min_elev)
-

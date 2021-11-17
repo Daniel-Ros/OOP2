@@ -1,4 +1,3 @@
-
 class Building(object):
     def __init__(self, min_floor, max_floor) -> None:
         self.min_floor = min_floor
