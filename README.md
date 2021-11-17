@@ -1,6 +1,6 @@
 # Ex1 OOP class - ariel CS
 
-## brief overview
+## Brief overview
 
 In this assigment we were requested to make an offline algorithm for a building with elevators. We were given a tester,
 and some scenarios to try. Our algorithm used the same techniques as our
@@ -14,6 +14,18 @@ The workspace contains two folders by default, where:
 - `Ex1_Buildings`: the folder with all the building to the scenarios
 - `Ex1_Calls`: the folder with all the calls files
 - `.`: the folder with the code itself and the tester
+
+## class structure
+
+being an OOP course we had to make our classes to accomplish out desired algorithm. The classes we implemented are:
+
+|Name|Description|
+|----|---|
+|Algorithm|The class for our algorithm|
+|Simulator|The class for simulation and calculating the elevator position / time to finish some tasks|
+|Call|A basic data structure to hold the calls|
+|Building|A basic data structure to hold the building with its elevators|
+|Elevator|A basic data structure to hold the elevator|
 
 ## Testing
 
@@ -35,6 +47,7 @@ or use the python script that runs all the combination of building/calls that ar
     python3 run_all.py
 
 then a file name `detailed_report.csv`will appear with all the building/calls combination runs
+
 ## Results
 
 These are the final results that I was able to get
@@ -42,26 +55,26 @@ These are the final results that I was able to get
 
 |building| calls file| avg_time| uncompleted_calls| certificate|
 |---|-----|----|----|----|
-|Ex1_Buildings/B4.json|Ex1_Calls/Calls_d.csv|181.59887473199998|2|-1029780052|
-|Ex1_Buildings/B4.json|Ex1_Calls/Calls_a.csv|21.39|0|-477245372|
-|Ex1_Buildings/B4.json|Ex1_Calls/Calls_b.csv|182.77930438399991|8|-1029079617|
-|Ex1_Buildings/B4.json|Ex1_Calls/Calls_c.csv|188.049190305|1|-1049811266|
-|Ex1_Buildings/B3.json|Ex1_Calls/Calls_d.csv|538.7704245020027|97|-1988858225|
-|Ex1_Buildings/B3.json|Ex1_Calls/Calls_a.csv|31.52|0|-507592314|
-|Ex1_Buildings/B3.json|Ex1_Calls/Calls_b.csv|566.305679903997|123|-1821234212|
-|Ex1_Buildings/B3.json|Ex1_Calls/Calls_c.csv|549.042974835004|147|-1768929484|
-|Ex1_Buildings/B5.json|Ex1_Calls/Calls_d.csv|36.024|0|-524830233|
-|Ex1_Buildings/B5.json|Ex1_Calls/Calls_a.csv|17.18|0|-459240568|
-|Ex1_Buildings/B5.json|Ex1_Calls/Calls_b.csv|34.967|0|-517942067|
-|Ex1_Buildings/B5.json|Ex1_Calls/Calls_c.csv|35.137|0|-521468334|
-|Ex1_Buildings/B1.json|Ex1_Calls/Calls_d.csv|1841.6984976999543|950|-4422944342|
 |Ex1_Buildings/B1.json|Ex1_Calls/Calls_a.csv|112.92|0|-254611173|
-|Ex1_Buildings/B1.json|Ex1_Calls/Calls_b.csv|1784.2436402240376|963|-4812623036|
-|Ex1_Buildings/B1.json|Ex1_Calls/Calls_c.csv|1839.3603121899735|958|-4474949366|
-|Ex1_Buildings/B2.json|Ex1_Calls/Calls_d.csv|1840.5214976999544|950|-4427977959|
-|Ex1_Buildings/B2.json|Ex1_Calls/Calls_a.csv|53.8|0|-315129308|
-|Ex1_Buildings/B2.json|Ex1_Calls/Calls_b.csv|1783.2816402240373|963|-4813976071|
-|Ex1_Buildings/B2.json|Ex1_Calls/Calls_c.csv|1838.0983121899735|958|-4470029667|
+|Ex1_Buildings/B1.json|Ex1_Calls/Calls_b.csv|1784.24364022404|963|-4812623036|
+|Ex1_Buildings/B1.json|Ex1_Calls/Calls_c.csv|1839.36031218997|958|-4474949366|
+|Ex1_Buildings/B1.json|Ex1_Calls/Calls_d.csv|1841.69849769995|950|-4422944342|
+|Ex1_Buildings/B2.json|Ex1_Calls/Calls_a.csv|46.24|0|-290936543|
+|Ex1_Buildings/B2.json|Ex1_Calls/Calls_b.csv|1783.46564022404|963|-4813976071|
+|Ex1_Buildings/B2.json|Ex1_Calls/Calls_c.csv|1838.30531218997|958|-4470029667|
+|Ex1_Buildings/B2.json|Ex1_Calls/Calls_d.csv|1840.91049769995|950|-4427977959|
+|Ex1_Buildings/B3.json|Ex1_Calls/Calls_a.csv|27.07|0|-497943606|
+|Ex1_Buildings/B3.json|Ex1_Calls/Calls_b.csv|443.074326720002|140|-1129010868|
+|Ex1_Buildings/B3.json|Ex1_Calls/Calls_c.csv|469.976041285|37|-2024339219|
+|Ex1_Buildings/B3.json|Ex1_Calls/Calls_d.csv|451.000991424002|64|-1156741974|
+|Ex1_Buildings/B4.json|Ex1_Calls/Calls_a.csv|19.94|0|-466195294|
+|Ex1_Buildings/B4.json|Ex1_Calls/Calls_b.csv|143.626038048|1|-89100201|
+|Ex1_Buildings/B4.json|Ex1_Calls/Calls_c.csv|145.522|0|-100150008|
+|Ex1_Buildings/B4.json|Ex1_Calls/Calls_d.csv|139.084|0|-79484006|
+|Ex1_Buildings/B5.json|Ex1_Calls/Calls_a.csv|15.43|0|-456579370|
+|Ex1_Buildings/B5.json|Ex1_Calls/Calls_b.csv|36.859|0|-524830233|
+|Ex1_Buildings/B5.json|Ex1_Calls/Calls_c.csv|35.038|0|-521468334|
+|Ex1_Buildings/B5.json|Ex1_Calls/Calls_d.csv|35.352|0|-521468334|
 
 ## Assigment Instructions
 
