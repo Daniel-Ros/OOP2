@@ -120,3 +120,4 @@ made in Java StdDraw) : [here](https://www.youtube.com/watch?v=yp0BwQUdc-o)
 Blue = Call , Yellow = Call destination , Green = Elevator , Light Green = Zero floor   
 
 ![alt-text](https://github.com/Daniel-Ros/OOP2/blob/master/bonussample.gif)
+> Sample from youtube video
