@@ -29,6 +29,7 @@ The workspace contains two folders by default, where:
 
 - `Ex1_Buildings`: the folder with all the building to the scenarios
 - `Ex1_Calls`: the folder with all the calls files
+- `Bonus`: this folder contains the java code for the Bonus
 - `.`: the folder with the code itself and the tester
 
 ## class structure
@@ -114,9 +115,14 @@ students) : [here](https://docs.google.com/spreadsheets/d/1fyFWvU_8d8UeaiUdyDujf
 
 ## Bonus Graphic Simulation
 
-youtube (bonus section ,
-made in Java StdDraw) : [here](https://www.youtube.com/watch?v=yp0BwQUdc-o)
+Youtube (bonus section , made in Java StdDraw) : [here](https://www.youtube.com/watch?v=yp0BwQUdc-o)
 
-Blue = Call , Yellow = Call destination , Green = Elevator , Light Green = Zero floor 
+Blue = Call , Yellow = Call destination , Green = Elevator , Light Green = Zero floor
 ![til](bonussample.gif)
 > Sample from youtube video
+
+This is based on the ex0 assignment, We implemented the elevator logic as described in the assigment requirements And
+added the drawing capabilities, In fact, it will work with any elevator algorithm or building.
+
+The building and elevators are drawn dynamically by the number of floors/elevators and the live elevator position
+
