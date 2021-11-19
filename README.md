@@ -113,4 +113,4 @@ Reported results (by
 students) : [here](https://docs.google.com/spreadsheets/d/1fyFWvU_8d8UeaiUdyDujfgvt2dMs2mzzLd9QgUb33Wc/edit?usp=sharing)
 
 youtube (bonus section ,
-made in Java StdDraw) : [here](https://www.youtube.com/watch?v=yp0BwQUdc-o)
+made in Java StdDraw) Blue = Call , Yellow = Call destination , Green = Elevator , Light Green = Zero floor   : [here](https://www.youtube.com/watch?v=yp0BwQUdc-o)
