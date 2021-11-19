@@ -1,15 +1,25 @@
 # Ex1 OOP class - ariel CS
 
 [Brief overview](https://github.com/Daniel-Ros/OOP2/blob/master/README.md#brief-overview)
+
 [Algorithm](https://github.com/Daniel-Ros/OOP2/blob/master/README.md#algorithm)
+
 [folder structure](https://github.com/Daniel-Ros/OOP2/blob/master/README.md#folder-structure)
+
 [class structure](https://github.com/Daniel-Ros/OOP2/blob/master/README.md#class-structure)
+
 [testing](https://github.com/Daniel-Ros/OOP2/blob/master/README.md#testing)
+
 [running the simulation](https://github.com/Daniel-Ros/OOP2/blob/master/README.md#running-the-simulation)
+
 [results](https://github.com/Daniel-Ros/OOP2/blob/master/README.md#results)
+
 [assigment instructions](https://github.com/Daniel-Ros/OOP2/blob/master/README.md#assigment-instructions)
+
 [UML](https://github.com/Daniel-Ros/OOP2/blob/master/README.md#uml)
+
 [bonus graphic simulation](https://github.com/Daniel-Ros/OOP2/blob/master/README.md#bonus-graphic-simulation)
+
 
 ## Brief overview
 
