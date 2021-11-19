@@ -118,7 +118,7 @@ students) : [here](https://docs.google.com/spreadsheets/d/1fyFWvU_8d8UeaiUdyDujf
 Youtube (bonus section , made in Java StdDraw) : [here](https://www.youtube.com/watch?v=yp0BwQUdc-o)
 
 Blue = Call , Yellow = Call destination , Green = Elevator , Light Green = Zero floor
-![til](bonus\bonussample.gif)
+![til](bonus/bonussample.gif)
 > Sample from youtube video
 
 This is based on the ex0 assignment, We implemented the elevator logic as described in the assigment requirements And
