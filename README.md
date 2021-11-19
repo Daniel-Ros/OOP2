@@ -122,7 +122,8 @@ Blue = Call , Yellow = Call destination , Green = Elevator , Light Green = Zero 
 > Sample from youtube video
 
 This is based on the ex0 assignment, We implemented the elevator logic as described in the assigment requirements And
-added the drawing capabilities, In fact, it will work with any elevator algorithm or building.
+added the drawing capabilities, In fact, it will work with any elevator algorithm or building.To make it work, simply
+add the `ShabatElev3Algo.java` file to the previous assigment and run it.
 
 The building and elevators are drawn dynamically by the number of floors/elevators and the live elevator position
 
