@@ -100,9 +100,9 @@ These are the final results that I was able to get
 
 ## Assigment Instructions
 
-Google doc:[here](https://docs.google.com/document/d/1D4aW2vRaKjwtSBY1gDyCC6SNRE5TRGwMerGIXUMkI_Y/edit?usp=sharing)
+Google doc : [here](https://docs.google.com/document/d/1D4aW2vRaKjwtSBY1gDyCC6SNRE5TRGwMerGIXUMkI_Y/edit?usp=sharing)
 
-Testing jar:[here](https://github.com/benmoshe/OOP_2021/tree/main/Assignments/Ex1/libs)
+Testing jar : [here](https://github.com/benmoshe/OOP_2021/tree/main/Assignments/Ex1/libs)
 
 GitHub: [project files](https://github.com/benmoshe/OOP_2021/tree/main/Assignments/Ex1)
 
