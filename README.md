@@ -1,5 +1,5 @@
 # Ex1 OOP class - ariel CS
-
+### Table of content
 [Brief overview](https://github.com/Daniel-Ros/OOP2/blob/master/README.md#brief-overview)
 
 [Algorithm](https://github.com/Daniel-Ros/OOP2/blob/master/README.md#algorithm)
