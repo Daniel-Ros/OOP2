@@ -1,0 +1,101 @@
+@startuml
+
+skinparam backgroundColor DimGray
+skinparam roundcorner 15
+skinparam stereotypeCBackgroundColor White
+skinparam classFontColor Black
+skinparam classFontSize 14
+skinparam DomainBackgroundColor BLUE
+skinparam ArrowColor BLACK
+skinparam ClassBackgroundColor White
+skinparam ClassBorderColor Black
+skinparam ClassFontColor Black
+skinparam ClassAttributeFontColor Black
+skinparam ClassAttributeFontSize 12
+
+
+ Class Algo {
+    {field} calls
+    {field} building
+    {method} - run()
+}
+
+Class building {
+    {field}min_floor
+    {field}max_floor
+    {field}elev[]
+
+    {method}-set_active_min_max(tmin,tmax)
+    {method}-add_elevator(elev)
+    {method}-num_elevators
+}
+
+Class elevators {
+    {field}id
+    {field}speed
+    {field}close
+    {field}open
+    {field}start
+    {field}stop
+    {field}calls[]
+
+    fastest
+   fastest_elev
+
+   {method} - add_call(c)
+   {method} - remove_call(c)
+
+}
+Class call {
+    {field} src
+    {field} dest
+    {field} time
+    {field} elev
+    {field} state
+    {field} dir
+
+    {method} - alloc(elev)
+    {method} - de_alloc(elev)
+    {method} - pickup()
+    {method} - drop_off()
+}
+
+Class simulator {
+    {method} - time_to_finish(e,src,dest)
+    {method} - bid(e , call)
+}
+
+enum DIRECTION {
+    UP=1
+    DOWN=0
+}
+
+enum STATE {
+    INIT = 0
+    GOING2SRC = 1
+    GOING2DEST = 2
+    DONE = 3
+}
+
+class Ex1<< (M,Aqua) main >>{
+{method} + main()
+{method} -build_building(filename)
+{method} -build_calls_obj(filename)
+{method} -write_calls(filename)
+{field} Building JSON
+{field} Calls CSV
+{field} Out CSV
+
+}
+
+building <- Algo
+call <-- Algo
+elevators <-- Algo
+building <- elevators
+call <|= DIRECTION
+call <|== STATE
+Algo <- simulator
+building <- Ex1
+call <- Ex1
+Algo <== Ex1
+@enduml
