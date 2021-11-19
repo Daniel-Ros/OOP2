@@ -6,7 +6,7 @@ from building import Building
 from call import Call
 from elevator import Elevator
 
-
+# build building , elevators from json
 def build_building(file_name):
     f = open(sys.argv[1])
     file = json.load(f)
@@ -19,7 +19,7 @@ def build_building(file_name):
     f.close()
     return b
 
-
+# build calls from csv
 def build_calls_obj(file):
     calls = []
     f = open(file, "r")
@@ -34,13 +34,12 @@ def build_calls_obj(file):
     f.close()
     return calls, tmin, tmax
 
-
+# creating out.csv file
 def write_calls(file, calls):
     f = open(file, "w+")
     for c in calls:
         f.write(str(c))
     f.close()
-
 
 def main():
     calls, tmin, tmax = build_calls_obj(sys.argv[2])

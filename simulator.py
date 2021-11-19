@@ -1,5 +1,6 @@
 class Simulator:
 
+    # every elevator has a call list , we want to calculate the time it takes to elevator to finish all calls
     def bid(self, e, call):
         time = 0
         pos = 0

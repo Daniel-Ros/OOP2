@@ -9,7 +9,7 @@ class Elevator:
         self.close = close
         self.start = start
         self.stop = stop
-        self.calls = []
+        self.calls = []  # calls assigned to this elevator
         self.time = 0
         Elevator.fastest = max(Elevator.fastest, speed)
         if speed == Elevator.fastest:
